@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+h1{
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+
+#addTxt{
+    border-radius: 0.5cm;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 35%;
+    text-decoration: none;
+}
+
+#addBtn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.2cm;
+    width: 2.5cm;
+    height: 1.2cm;
+}
+
+#addBtn:hover{
+    background-color: burlywood;
+    font-weight: bold;
+}
+
+#dpta{
+    border-radius: 0.5cm;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#dpta:hover{
+    background-image: linear-gradient(to right, rgb(161, 206, 248), rgb(2, 107, 168));
+}
+
+button{
+    background-color: navy;
+    color: white;
+    border-radius: 0.5cm;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline-style: none;
+}
+
+#VB{
+    position: absolute;
+    margin-left: 80% ;
+    margin-right: auto;
+    top: 15%;
+    background-image: linear-gradient(to right, rgb(161, 206, 248), rgb(2, 107, 168));;
+}
+
+h2{
+    position: absolute;
+    margin-left: 80% ;
+    margin-right: auto;
+    top: 2%;
+}
