@@ -1,0 +1,21 @@
+#grad{
+    background-image: linear-gradient(to right, rgb(161, 206, 248), rgb(2, 107, 168));
+}
+
+h1{
+    color: rgb(143, 143, 82);
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div{
+    color: black;
+    position: relative;
+    padding: 2%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a:hover{
+    color: navy;
+    background-color: orange;
+}
