@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRESS BAR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RESPONSIVE AND DYNAMIC PROGRESS BAR</h1>
+        <div id="stepProgressBar">
+
+            <!-- dummy button and grey line -->
+            <div class="step">
+                <div class="bullet grey zero"></div>
+                <br>
+                <p class="step-text"></p>
+            </div>
+
+            <div class="step">
+                <div class="bullet grey">1</div>
+                <br>
+                <p class="step-text">One</p>
+            </div>
+            <div class="step">
+                <div class="bullet grey">2</div>
+                <br>
+                <p class="step-text">Two</p>
+            </div>
+            <div class="step">
+                <div class="bullet grey">3</div>
+                <br>
+                <p class="step-text">Three</p>
+            </div>
+            <div class="step">
+                <div class="bullet grey">4</div>
+                <br>
+                <p class="step-text">Complete</p>
+            </div>
+        </div>
+
+        <div id="main">
+            <br>
+            <p id="content">Start</p>
+            <button id="previousBtn" disabled>Back</button>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
