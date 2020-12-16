@@ -1,0 +1,16 @@
+h1
+{
+    margin-top: 10px;
+}
+input, textarea{
+    background-color: rgb(189, 251, 185);
+    width: auto;
+}
+table
+{
+    background-color: rgb(84, 204, 75);
+}
+body
+{
+    background-color: darkslategray;
+}

@@ -1,0 +1,222 @@
+body
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.images img
+{
+    width: 50%;
+    height: 114px;
+    border-radius: 50%;
+    text-align:center ;
+    transition: all .6s ease;
+    position: relative;
+    box-shadow: 0px 0px 0px 7px white;
+}
+.images::before
+{
+    content: "";
+    background: #eb1768;
+    transform: scale(3);
+    transition: all .3s linear;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 133%;
+}
+
+
+.our-team:hover .images:before
+{
+    height: 50%;
+}
+
+.our-team
+{
+    padding: 30px 0 40px;
+    background: black;
+    text-align:center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.content
+{
+    margin-top: 50px;
+    color: white;
+}
+.icon
+{
+    margin-top: 28px;
+   
+}
+.icon li
+{
+    text-decoration:none;
+    color: white;
+    
+}
+.icons 
+{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    background: #eb1768;
+    width: 100%;
+    position: absolute;
+    text-align:center;
+    transition: all .5s ease;
+   bottom: -100px;
+}
+.our-team:hover .icons{
+    bottom: -20px;
+}
+.icons li
+{
+    padding: 12px;
+    margin-left: -40px;
+}
+.icon li a img
+{
+    background: #eb1768;
+   border-radius: 50%;
+}
+.icon li a
+{
+    display: block;
+    font-size: 17px;
+    color: white;
+    transition: all .3s ease;
+}
+.our-team:hover .images img
+{
+    box-shadow: 0 0 0 10px #eb1768;
+    transform: scale(.8);
+}
+.testimonial
+{
+    margin: 30px auto;
+}
+#btn
+{
+        background:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+        background-clip: padding-box;
+        border: none;
+        padding: 6px;
+        border-radius: 3px;
+        color: whitesmoke;
+        transition: background .6s ease;
+        box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+.our-team:hover #btn
+{
+    background:#eb1768;
+    box-shadow: 0 0 0 1px #eb1768;
+
+    background-clip: padding-box;
+    color: white;
+}
+.head
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.afterclick
+{
+    display: none;
+}
+.div2
+{
+    display: block;
+}
+.btns
+{
+    background:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background-clip: padding-box;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+   margin: 0px 10px;
+}
+.btns:hover
+{
+    background:#eb1768;
+    box-shadow: 0 0 0 1px #eb1768;
+    background-clip: padding-box;
+    color: white;
+}
+.info
+{
+    display: none;
+}
+.infos
+{
+    display: block;
+}
+.Expenses
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+}
+#expenselistbtn
+{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    background-clip: padding-box;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: whitesmoke;
+    background:linear-gradient(90deg, #4458dc 0%, #854fee 100%) ;
+    transition: background .6s ease;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+    margin-top: 34px;
+    margin-bottom: 10px;
+}
+#submit
+{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    background-clip: padding-box;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: whitesmoke;
+    background:linear-gradient(90deg, #4458dc 0%, #854fee 100%) ;
+    transition: background .6s ease;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+    margin-top: 34px;
+    margin-bottom: 10px;   
+    margin-left: 20px;
+}
+#submit:hover
+{
+    background:#eb1768;
+    box-shadow: 0 0 0 1px #eb1768;
+    background-clip: padding-box;
+    color: white;
+}
+#expenselistbtn:hover
+{
+    background:#eb1768;
+    box-shadow: 0 0 0 1px #eb1768;
+    background-clip: padding-box;
+    color: white;
+}
+.totalrupees
+{
+    float: right;
+    margin-right: 48px;
+}

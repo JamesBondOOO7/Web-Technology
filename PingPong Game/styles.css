@@ -1,0 +1,45 @@
+body
+{
+    background-color: rgb(22, 22, 22);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#paddle1 
+{
+    position: absolute;
+    left: 0px;
+    top: 460px;
+    width: 30px;
+    height: 150px;
+    background-color: red;
+    border-radius: 15px;
+}
+
+#paddle2
+{
+    position: absolute;
+    right: 0px;
+    top: 460px;
+    width: 30px;
+    height: 150px;
+    background-color: red;
+    border-radius: 15px;
+}
+
+#ball
+{
+    position: absolute;
+    left: 820px;
+    top: 510px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 255, 0);
+    border-radius: 50%;
+}
+
+#net
+{
+    border-left: 6px dotted yellow;
+    height: 200%;
+    left: 50%;
+    position: fixed;
+}

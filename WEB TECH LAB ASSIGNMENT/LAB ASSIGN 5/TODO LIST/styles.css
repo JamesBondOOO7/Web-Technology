@@ -1,0 +1,33 @@
+body
+{
+    background: no-repeat center center fixed;
+    background-image: linear-gradient(to top right, rgb(7, 143, 233), skyblue, white);
+}
+
+#addBtn{
+    background-color: skyblue;
+    color: black;
+}
+
+#addBtn:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+.btn{
+    background-color: skyblue;
+    color: black;
+}
+
+.btn:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+.inc{
+    background-color: red;
+}
+
+.inc:hover{
+    background-color: red;
+}

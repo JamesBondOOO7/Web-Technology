@@ -1,0 +1,78 @@
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="books">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="book" type="BookType" minOccurs="1" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:simpleType name="typetype">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="P"/>
+      <xsd:enumeration value="H"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="titleType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute type="typetype" name="type"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:simpleType name="middleNameType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="1" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="authorType">
+    <xsd:sequence>
+      <xsd:element type="xsd:string" name="first"/>
+      <xsd:element type="middleNameType" name="middle" minOccurs="0" maxOccurs="1"/>
+      <xsd:element type="xsd:string" name="last"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="monthType">
+    <xsd:restriction base="xsd:unsignedByte">
+      <xsd:minInclusive value="1" />
+      <xsd:maxInclusive value="12" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="dayType">
+    <xsd:restriction base="xsd:unsignedByte">
+      <xsd:minInclusive value="1" />
+      <xsd:maxInclusive value="31" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="publishedDateType">
+    <xsd:sequence>
+      <xsd:element type="monthType" name="month"/>
+      <xsd:element type="dayType" name="day"/>
+      <xsd:element type="xsd:gYear" name="year"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="typeType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="fiction"/>
+      <xsd:enumeration value="nonfiction"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="priceType">
+    <xsd:restriction base="xsd:decimal">
+      <xsd:minExclusive value="0"/>
+      <xsd:totalDigits value="5" />
+      <xsd:fractionDigits value="2" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="BookType">
+    <xsd:sequence>
+      <xsd:element type="titleType" name="title"/>
+      <xsd:element type="xsd:byte" name="edition" minOccurs="0" maxOccurs="1"/>
+      <xsd:element type="authorType" name="author" maxOccurs="unbounded" minOccurs="1"/>
+      <xsd:element type="publishedDateType" name="publishedDate"/>
+      <xsd:element type="typeType" name="type"/>
+      <xsd:element type="priceType" name="price"/>
+    </xsd:sequence>
+    <xsd:attribute type="xsd:ID" name="isbn" use="required"/>
+  </xsd:complexType>
+</xsd:schema>

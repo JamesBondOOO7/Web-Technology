@@ -1,0 +1,10 @@
+{"id":1,"name1":"khustar","name2":"Ansari","income":150000,
+    "products":[
+        {"id":"abc@100","name":"Chair","quant":10,"expense":10000},
+        {"id":"abc@101","name":"SofaSet","quant":5,"expense":60000},
+        {"id":"abc@102","name":"Table","quant":15,"expense":35000}
+    ]
+
+}
+
+

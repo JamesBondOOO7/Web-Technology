@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h2 class="heading">EXPENSES TRACKER USING AJAX</h2>
+        </div>
+        <div class="row testimonial">
+            <div class="col-lg-4 col-md-6">
+                <div class="our-team">
+                    <div class="images">
+                        <img src="pp.jpg" class="five" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Web Developer</h3>
+                        <button id="btn">Expenses Manger</button>
+                    </div>
+                    <div class="icon">
+                        <ul class="icons">
+                            <li><a href=""><img src="./twitter.png" style="width:19px;" alt=""></a></li>
+                            <li><a href=""><img src="./facebook.png" style="width:19px;" alt=""></a></li>
+                            <li><a href=""><img src="./youtube.png" style="width:19px;" alt=""></a></li>
+                            <li><a href=""><img src="./logo.png" style="width:19px;" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6 afterclick">
+               <div class="employee">
+                   <h3 style="text-align:center;">EMPLOYEE</h3>
+               </div>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">Employee_ID</th>
+                          <th scope="col">First Name</th>
+                          <th scope="col">Last Name</th>
+                          <th scope="col">Income</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <th scope="col"id="id1"></th>
+                        <th scope="col"id="firstname"></th>
+                        <th scope="col"id="lastname"></th>
+                        <th scope="col"id="incomes"></th>
+                    </tr>
+                </tbody>
+                </table>
+                <button id="userbtn"class="btns">Click for User Detail</button>
+                <button id="incomesumry"class="btns">Click for Income Detail</button>
+                <div class="total balance">
+                    <button class="totalrupees btn">BALANCE : <span class="span2">150000</span> </button>
+                </div>
+                <div class="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni odio, dolores amet natus
+                    iusto officia, totam sed repellat beatae, nisi neque. Id cum iure maiores consequuntur? Obcaecati,
+                    sapiente quis.Id, culpa nostrum! Tempora, accusamus eveniet. Aperiam aliquid deserunt magni nisi
+                    illo. Ad, sapiente eos. Dolores, quas eveniet sequi unde veritatis totam tenetur commodi libero
+                    recusandae provident aspernatur perferendis pariatur!
+                </div>
+                <div class="Expenses">
+                    <button id="expenselistbtn">CLICK FOR FINAL EXPENSES LIST</button>
+                    <button id="submit">Submit</button>
+                </div>
+                <table class="table">
+                    <thead class="thead-dark theads">
+                       
+                        <tr>
+                            <th scope="col">Product_ID</th>
+                            <th scope="col">Product-Name</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Prices</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodys">
+                        <tr id="inputdiv">
+                            <th ><input  id="p10"type="text"></th>
+                            <td ><input id="p11"type="text"></td>
+                            <td ><input id="p12"type="date"></td>
+                            <td ><input id="p13"type="number"></td>
+                        </tr>
+                        <!-- <tr>
+                            <th  id="p20"></th>
+                            <td id="p21"></td>
+                            <td id="p22"></td>
+                            <td id="p23"></td>
+                        </tr>
+                        <tr>
+                            <th  id="p30"></th>
+                            <td id="p31"></td>
+                            <td id="p32"></td>
+                            <td id="p33"></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <div class="total">
+                    <button class="totalrupees btn">TOTAL : <span class="span1"></span> </button>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  
+    <script src="./index.js"></script>
+</body>
+
+</html>
